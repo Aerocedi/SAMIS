@@ -1,0 +1,49 @@
+Here are some functions you can use to command the drone.
+
+You should check codes online for controlling drones with djitellopy library
+
+Before you execute any code always connect to the drone first 
+Here is how, tello.connect()
+tello.connect() - conneccts to the drone
+
+tello.takeoff() - takes off the drone.
+Important to note is that when you takeoff, the minimum you can fly is 20 centimeters
+tello.move_left(100) 
+tello.rotate_clockwise(90)
+tello.move_forward(100)
+
+tello.land() - lands the drone.
+
+tello = Tello()
+
+
+keepRecording = True
+tello.streamon()
+frame_read = tello.get_frame_read()
+
+
+# we need to run the recorder in a seperate thread, otherwise blocking options
+#  would prevent frames from getting added to the video
+recorder = Thread(target=videoRecorder)
+recorder.start()
+
+tello.move_up(100) - takes off and move the drone up by 100 centimeters
+ """Fly x cm up.
+        Arguments:
+            x: 20-500
+        """ - the minimum you can fly is 20 centimeters and maximum is 500 centimeters
+tello.rotate_counter_clockwise(360)
+tello.land() - to land the drone
+
+tello.streamon()
+frame_read = tello.get_frame_read()
+
+tello.takeoff()
+cv2.imwrite("picture.png", frame_read.frame)
+
+A few useful things: 
+
+If you are uncertain about something, you can ask me a clarification question, as long as you specifically identify it saying "Question".
+
+
+
