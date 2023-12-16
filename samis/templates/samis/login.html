@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="fluid">
+    <div class="row">
+        <div class="col-lg-5 col-sm-9 col-md-8 col-8 mx-auto">
+        <div class="card  mt-5" style="border:transparent; background: linear-gradient(50deg,rgb(0, 96, 185),rgb(245, 212, 105), rgb(13, 75, 13)); color: whitesmoke;"> 
+            
+            <div class="card-body">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <legend class="mb-4 text-danger"> <center> <i class="fas fa-plane-departure text-white "></i> <strong>SAMIS LOGIN</strong></center>
+                    <hr class="mx-5 text-white" style="font-size: 18px;">
+                    </legend>
+                    <div class="form-group">
+                      <label for="" class="bold"> <i class="fas fa-user-shield "></i> <b>Username</b></label>
+                      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                      <small id="helpId" class="text-muted">Enter personnel username</small>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label for=""><i class="fas fa-passport"></i> <b>Password</b></label>
+                        <input type="password" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Personnel's password</small>
+                      </div>
+
+                      <button type="submit" class="btn btn-md btn-success"> <i class="fa fa-unlock-alt" aria-hidden="true"></i> Access</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<input type="checkbox" id="check">
+<!--header area start-->
+<nav class="navbar navbar fixed-top">
+
+  <label for="check" class="nav-brand">
+
+    <i class="fas fa-bars" id="sidebar_btn"></i>  <h4 class="ml-5 text-white">SAMIS [[name]]</h4>
+    
+  </label>
+
+
+</nav>
+
+<div class="sidebar" >
+  
+  
+    <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Dashboard/ Aircraft oversight" @click="showHome"><i class="fas fa-plane"></i><span>Home</span></li>
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Add New Record" @click="assignTask"><i class="fas fa-pen-square"></i><span>Task</span></li>
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Maintenance History"><i class="fa fa-history" aria-hidden="true"></i><span>History</span></li>
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Robot Quick Insight"><i class="fas fa-eye"></i><span>Insight</span></li>
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Print Report"><i class="fas fa-align-left"></i><span>Reports</span></li> 
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Store Records"><i class="fas fa-database"></i><span>Store</span></li> 
+  <li class="nav-link" data-toggle="tooltip" data-placement="top" title="Admin"><i class="fas fa-user-lock" ></i><span>Admin</span></li>
+ 
+
+
+    
+</div>
+
+  <div v-if="dashboard">
+    <div class="container px-5">
+        <div class="row mx-5 my-5 jame" >
+          <div class="col-xs-1-12 col-lg-3 col-6 col-xs-6 col-md-3 col-sm-6">
+            <div class="card mt-2">
+              <div class="card-body">
+                <h4 class="card-text text-success " style="font-size: 15px; letter-spacing: 0.5px;"><b><i class="fas fa-screwdriver  fa-2x  "></i> Servicable</b></h4>
+                <h3 class="card-title"> 12</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-1-12 col-lg-3 col-6 col-xs-6 col-md-3 col-sm-6">
+            <div class="card mt-2">
+              <div class="card-body">
+                <h4 class="card-text text-danger" style="font-size: 15px; letter-spacing: 0.5px;"><b><i class="fas fa-exclamation-circle  fa-2x  "></i> Unservicable</b></h4>
+                <h3 class="card-title"> 13</h3>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-1-12 col-lg-3 col-6 col-xs-6 col-md-3 col-sm-6">
+            <div class="card mt-2">
+              <div class="card-body">
+                <h4 class="card-text text-warning" style="font-size: 15px; letter-spacing: 0.5px;"><b> <i class="fas fa-oil-can fa-2x"></i> Inspection</b></h4>
+                <h3 class="card-title">3</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-1-12 col-lg-3 col-6 col-xs-3 col-md-3 col-sm-6">
+            <div class="card mt-2">
+              <div class="card-body">
+                <h4 class="card-text text-alert" style="font-size: 15px; letter-spacing: 0.5px;"><b> <i class="fas fa-recycle  fa-2x "></i> Overhaul</b></h4>
+                <h3 class="card-title"> 18</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<div class="container pl-5">
+    <div class="row ml-5">
+        <div class="col-lg-11 col-sm-11 col-md-10 col-11 col-xs-10">
+            <div class="card">
+                <div class="card-header text-white" style="background-color:rgb(13, 75, 13);">
+                    <b> <i class="fas fa-toolbox    "></i> ON-GOING MAINTENANCE</b>
+                    
+                </div>
+                <h1>Tello Drone Live Stream</h1>
+                <img id="videoFeed" src="" alt="Live Stream">
+            
+                <script type="text/javascript">
+                    const videoFeed = document.getElementById('videoFeed');
+                    const ws = new WebSocket('ws://' + window.location.host + '/ws/dashboard/');
+            
+                    ws.onmessage = function(event) {
+                        const data = JSON.parse(event.data);
+                        if (data.frame) {
+                            videoFeed.src = 'data:image/jpeg;base64,' + data.frame;
+                        }
+                    };
+            
+                    ws.onerror = function(error) {
+                        console.error('WebSocket Error: ' + error);
+                    };
+                </script>
+                <div class="card-body progression" >
+                  <h4 class="card-title">Drone Interaction</h4>
+                  <p class="card-text">Interface with drone in natural language</p>
+                  <button id="run-command" class="btn btn-large btn-info">Start conversation</button>
+                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                  <script>
+                      $(document).ready(function(){
+                          $('#run-command').click(function(){
+                              $.post('/run-command/', function(data){
+                                  alert('Command Output: ' + data.output);
+                                  
+                              });
+                          });
+                      });
+                  </script>
+                </div>
+                <div class="card-footer text-muted">
+                    Footer
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--sidebar end-->
+
+
+<div v-if="task">
+
+  <div class="container pl-5 mt-5">
+    <div class="row ml-5">
+        <div class="col-lg-11 col-sm-11 col-md-10 col-11 col-xs-10">
+            <div class="card">
+                <div class="card-header text-white" style="background-color:rgb(13, 75, 13);">
+                    <b> <i class="fas fa-toolbox    "></i> ON-GOING MAINTENANCE</b>
+                    
+                </div>
+                <form action="{% url 'eng_rec' %}" method="POST">
+
+                {% csrf_token %}
+                <div class="card-body progression" >
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+
+                    
+                      <div class="form-group">
+                        <label for="task" class="text-danger"> <strong>Select a task</strong></label>
+                        <select class="form-control" name="task" >
+                          
+                          <option value="NewEngineRecord" id="taskbreak" name="task">New Engine Record</option>
+                          <option value="Module(s)Swapping" name="task">Module(s) Swapping</option>
+                          <option value="Engine Acessorie(s) Swapping" name="task"> Engine Acessorie(s) Swapping</option>
+                          <option value="Engine Inspection" name="task">Engine Inspection</option>
+                          <option value="Engine Snag Repair" name="task">Engine Snag Repair</option>
+                        </select>
+                      </div>
+
+                      <button type="submit" class="btn btn-md btn-danger" @click="checkTask">Start Task</button>
+                   
+
+                </div>
+                </form>
+              
+                <div class="card-footer text-muted">
+                    Footer
+                    
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+<footer>
+  <div class="upda fixed-bottom ">
+    Bottom Update
+  </div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,277 @@
+html,body{
+    background: linear-gradient(45deg,rgb(0, 96, 185),rgb(245, 212, 105), rgb(13, 75, 13)) !important;
+    background-size: cover;
+    padding: 0;
+    margin-right: 0 !important;
+    
+    height:100% !important;
+}
+
+div#pixSec{
+    background: url('../images/Alpha-Jets.jpeg') content-box;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height:100vmax
+}
+
+option{
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+div.card{
+    border-radius: 0px !important;
+    box-shadow: 3px 3px 3px 0px #22242A !important;
+    position: static;
+    
+}
+
+div.card:hover{
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+}
+
+div.container>div.row>div.card>div.card-body.progression{
+    background: url('../images/work.jpg') !important;
+    height: 100vh;
+}
+
+/* SIDE BAR CSS */
+
+.sidebar.sidebar-dropdown > a:after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    
+  }
+  
+  
+  
+  
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(10deg);
+    }
+    30% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    70% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .sidebar-menu .sidebar-dropdown.active > a:after {
+    transform: rotate(90deg);
+    right: 20px;
+  }
+  
+  
+  
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  
+  #check:checked ~ .sidebar li span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar>.children{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar li{
+    font-size: 20px;
+    margin-left: 200px;
+    width: 80px;
+  }
+  
+footer>.upda.fixed-bottom{
+  background: #22242A;
+  height: 25px;
+  margin-left: 250px;
+  margin-right: 250px;
+  border-top: 4px solid rgb(189, 38, 0);
+}
+  nav{
+  position: fixed;
+  background: rgb(0, 34, 65);
+  padding: 15px;
+  width: 100%;
+ 
+  border-bottom: 1px solid rgba(2, 64, 122, 0.349);
+  box-shadow: 0px 0px 5px 0px rgb(158, 158, 158) !important;
+  }
+  
+  
+  
+  
+  
+  
+  .sidebar,.sidebar>li.a{
+    background: rgb(0, 34, 65);
+    margin-top: 60px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 0px 1px  rgba(189, 38, 0, 0.178);
+    position: absolute;
+    left: 0;
+    width: 250px !important;
+    height: max-content;
+    transition: 0.3s;
+    transition-property: left;
+    border-right: 1px solid rgb(245, 212, 105);
+  
+    /*border-right: 1px solid rgb(155, 101, 1) !important;
+    border-top: 1px solid rgb(155, 101, 1) !important;
+    border-bottom: 1px solid rgb(155, 101, 1) !important;*/
+  }
+  
+  
+  /*rgba(209, 209, 209, 0.219)*/
+  .sidebar h4{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  i::after{
+    color: rgb(88, 88, 88) !important;
+  }
+  .sidebar li{
+    color: white !important;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    font-weight: 500;
+    padding-right: 10px !important;
+  }
+  
+  .sidebar li:hover{
+    background: rgb(192, 155, 31);
+    border-right: 4px solid whitesmoke;
+    color:white  !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+  
+  label i#sidebar_btn{
+    z-index: 1;
+    color: rgb(245, 212, 105);
+    position: fixed;
+    cursor: pointer;
+    left: 10px;
+    font-size: 20px;
+    margin: 1px 0;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  
+  label #sidebar_btn:hover{
+    color: rgb(192, 155, 31);
+  }
+  
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  
+  #check:checked ~ .sidebar li span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar>.children{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar li{
+    font-size: 18px;
+    margin-left: 170px;
+    width: 80px;
+  }
+
+
+  @media screen and (max-width:768px){
+      html,h4{
+          font-size: 12px !important;
+          
+      }
+
+      div.jame{
+          margin-right: 0px !important;
+          margin-left: 0px !important;
+      }
+
+
+      .sidebar{
+        background: rgb(0, 34, 65);
+        margin-top: 60px;
+        padding-top: 5px;
+        box-shadow: 0px 0px 0px 1px  rgba(189, 38, 0, 0.178);
+        position:absolute !important;
+        left: 0;
+        width: 240px !important;
+        height: 100%;
+        transition: 0.3s;
+        transition-property: left;
+        border-right: 1px solid rgb(245, 212, 105);
+       
+        /*border-right: 1px solid rgb(155, 101, 1) !important;
+        border-top: 1px solid rgb(155, 101, 1) !important;
+        border-bottom: 1px solid rgb(155, 101, 1) !important;*/
+      }
+      #check:checked ~ .sidebar li{
+        font-size: 13px;
+        margin-left: 170px;
+        width: 70px;
+        
+      }
+    
+      
+      #check:checked ~ .sidebar{
+        left: -190px;
+      }
+      
+      
+
+      
+  }

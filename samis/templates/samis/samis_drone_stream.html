@@ -1,0 +1,21 @@
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    
+    
+    
+    <div class="fluid">
+        <div class="row">
+            <img id="videoStream"  src="{% url 'samis_drone_stream' %}" />
+                
+
+<script type="text/javascript">
+    const img = document.getElementById('videoStream');
+    setInterval(() => {
+        img.src = '/samis_drone_stream/' + '?t=' + new Date().getTime();
+    }, 100);  // Update the image every 100 milliseconds
+</script>
+
+    </div>
+    </div>
+    {% endblock %}
