@@ -1,0 +1,3 @@
+[console_scripts]
+initiate = samis_drone_crl.initiate_drone:tello_node
+

@@ -1,0 +1,27 @@
+[1.712s] Invoking command in '/home/peteraerocedi/Samis_Drone/src/samis_drone_crl': PYTHONPATH=/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/prefix_override:/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samis_drone_crl build --build-base /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build install --record /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log --single-version-externally-managed
+[2.217s] running egg_info
+[2.218s] writing ../../build/samis_drone_crl/samis_drone_crl.egg-info/PKG-INFO
+[2.218s] writing dependency_links to ../../build/samis_drone_crl/samis_drone_crl.egg-info/dependency_links.txt
+[2.219s] writing entry points to ../../build/samis_drone_crl/samis_drone_crl.egg-info/entry_points.txt
+[2.219s] writing requirements to ../../build/samis_drone_crl/samis_drone_crl.egg-info/requires.txt
+[2.219s] writing top-level names to ../../build/samis_drone_crl/samis_drone_crl.egg-info/top_level.txt
+[2.221s] reading manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+[2.222s] writing manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+[2.222s] running build
+[2.223s] running build_py
+[2.223s] copying samis_drone_crl/initiate_drone.py -> /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build/lib/samis_drone_crl
+[2.223s] running install
+[2.224s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.224s]   warnings.warn(
+[2.224s] running install_lib
+[2.225s] copying /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build/lib/samis_drone_crl/initiate_drone.py -> /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl
+[2.227s] byte-compiling /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl/initiate_drone.py to initiate_drone.cpython-310.pyc
+[2.228s] Sorry: IndentationError: unindent does not match any outer indentation level (initiate_drone.py, line 24)
+[2.228s] running install_data
+[2.229s] running install_egg_info
+[2.232s] removing '/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info' (and everything under it)
+[2.233s] Copying ../../build/samis_drone_crl/samis_drone_crl.egg-info to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info
+[2.234s] running install_scripts
+[2.272s] Installing initiate script to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/samis_drone_crl
+[2.273s] writing list of installed files to '/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log'
+[2.295s] Invoked command in '/home/peteraerocedi/Samis_Drone/src/samis_drone_crl' returned '0': PYTHONPATH=/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/prefix_override:/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samis_drone_crl build --build-base /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build install --record /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log --single-version-externally-managed

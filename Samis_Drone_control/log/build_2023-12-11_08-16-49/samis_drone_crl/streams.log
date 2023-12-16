@@ -1,0 +1,23 @@
+[1.661s] Invoking command in '/home/peteraerocedi/Samis_Drone/src/samis_drone_crl': PYTHONPATH=/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/prefix_override:/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samis_drone_crl build --build-base /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build install --record /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log --single-version-externally-managed
+[2.165s] running egg_info
+[2.166s] writing ../../build/samis_drone_crl/samis_drone_crl.egg-info/PKG-INFO
+[2.166s] writing dependency_links to ../../build/samis_drone_crl/samis_drone_crl.egg-info/dependency_links.txt
+[2.166s] writing entry points to ../../build/samis_drone_crl/samis_drone_crl.egg-info/entry_points.txt
+[2.167s] writing requirements to ../../build/samis_drone_crl/samis_drone_crl.egg-info/requires.txt
+[2.167s] writing top-level names to ../../build/samis_drone_crl/samis_drone_crl.egg-info/top_level.txt
+[2.168s] reading manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+[2.169s] writing manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+[2.169s] running build
+[2.169s] running build_py
+[2.170s] running install
+[2.170s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.170s]   warnings.warn(
+[2.170s] running install_lib
+[2.173s] running install_data
+[2.174s] running install_egg_info
+[2.177s] removing '/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info' (and everything under it)
+[2.178s] Copying ../../build/samis_drone_crl/samis_drone_crl.egg-info to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info
+[2.178s] running install_scripts
+[2.217s] Installing initiate script to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/samis_drone_crl
+[2.217s] writing list of installed files to '/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log'
+[2.241s] Invoked command in '/home/peteraerocedi/Samis_Drone/src/samis_drone_crl' returned '0': PYTHONPATH=/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/prefix_override:/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/samis_drone_crl build --build-base /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build install --record /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log --single-version-externally-managed

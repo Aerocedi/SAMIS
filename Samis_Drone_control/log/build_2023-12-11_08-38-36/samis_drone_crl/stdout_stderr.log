@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/samis_drone_crl/samis_drone_crl.egg-info/PKG-INFO
+writing dependency_links to ../../build/samis_drone_crl/samis_drone_crl.egg-info/dependency_links.txt
+writing entry points to ../../build/samis_drone_crl/samis_drone_crl.egg-info/entry_points.txt
+writing requirements to ../../build/samis_drone_crl/samis_drone_crl.egg-info/requires.txt
+writing top-level names to ../../build/samis_drone_crl/samis_drone_crl.egg-info/top_level.txt
+reading manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+writing manifest file '../../build/samis_drone_crl/samis_drone_crl.egg-info/SOURCES.txt'
+running build
+running build_py
+copying samis_drone_crl/initiate_drone.py -> /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build/lib/samis_drone_crl
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/peteraerocedi/Samis_Drone/build/samis_drone_crl/build/lib/samis_drone_crl/initiate_drone.py -> /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl
+byte-compiling /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl/initiate_drone.py to initiate_drone.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../build/samis_drone_crl/samis_drone_crl.egg-info to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/python3.10/site-packages/samis_drone_crl-0.0.1-py3.10.egg-info
+running install_scripts
+Installing initiate script to /home/peteraerocedi/Samis_Drone/install/samis_drone_crl/lib/samis_drone_crl
+writing list of installed files to '/home/peteraerocedi/Samis_Drone/build/samis_drone_crl/install.log'
