@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['dent', 'scratch']
+
+roboflow:
+  workspace: hri-wsy49
+  project: car-maintenance
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hri-wsy49/car-maintenance/dataset/2
