@@ -1,5 +1,5 @@
 ## General Note:
-SAMIS was built to run on an edge device (raspberry pi). The following instruction provides a step by step process of use on a windows, mac or linux computer.
+SAMIS was built to run on an edge device (raspberry pi). The following instruction provides a step by step process of use on a linux, mac or windows PC.
 # Getting Started
 This is the home section of the SAMIS code codex. Besides the main branch (**Dashboard**), there are four other branches, kindly check them to have the complete code. 
 The Dashboard is a web application built on django with support of Javascript. It consist of Django, and standalone python library called SAMISgpt integrated into the webapp
