@@ -20,7 +20,7 @@ import speech_recognition as sr
 #UPDATED
 client = OpenAI(
     # This is the default and can be omitted
-    api_key=os.environ.get("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"),
+    api_key=os.environ.get("YOUR_OPENAI_API_KEY"),
 )
 
 
