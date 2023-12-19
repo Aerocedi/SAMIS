@@ -2,6 +2,7 @@
 This is the home section of the SAMIS code codex. Besides the main branch (**Dashboard**), there are four other branches, kindly check them to have the complete code. 
 The Dashboard is a web application built on django with support of Javascript. It consist of Django, and standalone python library called SAMISgpt integrated into the webapp
 - Requirements: Python 3.6 or >
+- Install dependencies through `pip` you might be missing
 
 * Download the SAMIS **Dashboard** as a zip file and extract OR  Create a folder called SAMIS_WEB and **clone** the files into it.
 
@@ -77,5 +78,5 @@ In our case we used an aerial robot (**DJI Tello Edu**) drone.
 Now navigate to the the localhost address usually `http://127.0.0.1:8000`
 - The first page you will see is a SAMIS login (**Features to be updated in next realease)
 - Kindly navigate to `http://127.0.0.1:8000/dashboard`
-- You can begin by clicking *Start conversation* button
-- Your drone should now start flying 
+- You can begin by clicking **Start conversation** button
+- Your drone should now start flying and show you some moves 
