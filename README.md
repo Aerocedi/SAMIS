@@ -1,3 +1,5 @@
+## General Note:
+SAMIS was built to run on an edge device (raspberry pi). The following instruction provides a step by step process of use on a windows, mac or linux computer.
 # Getting Started
 This is the home section of the SAMIS code codex. Besides the main branch (**Dashboard**), there are four other branches, kindly check them to have the complete code. 
 The Dashboard is a web application built on django with support of Javascript. It consist of Django, and standalone python library called SAMISgpt integrated into the webapp
@@ -79,4 +81,12 @@ Now navigate to the the localhost address usually `http://127.0.0.1:8000`
 - The first page you will see is a SAMIS login (**Features to be updated in next realease)
 - Kindly navigate to `http://127.0.0.1:8000/dashboard`
 - You can begin by clicking **Start conversation** button
-- Your drone should now start flying and show you some moves 
+- Your drone should now start flying and show you some moves
+
+## Communicating With Your Robot In Natural Unstructed Language
+
+Once the robot(drone) has been inititiated and demonstrates readiness.
+- Ensure your microphone and speaker is working 
+- Wait for the prompt that says "SAMIS wants to hear you speaking"
+- Then start speaking
+- SAMISGpt engine will execute command and speak back to as the robot
