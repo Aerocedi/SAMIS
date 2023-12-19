@@ -77,3 +77,5 @@ In our case we used an aerial robot (**DJI Tello Edu**) drone.
 Now navigate to the the localhost address usually `http://127.0.0.1:8000`
 - The first page you will see is a SAMIS login (**Features to be updated in next realease)
 - Kindly navigate to `http://127.0.0.1:8000/dashboard`
+- You can begin by clicking *Start conversation* button
+- Your drone should now start flying 
