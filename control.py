@@ -1,7 +1,7 @@
 import openai
 import re
 from openai import OpenAI
-#from drone import *
+from drone import *
 from djitellopy import enforce_types
 from djitellopy.tello import *
 import argparse
@@ -112,6 +112,7 @@ class colors:  # You may need to change color settings
 
 print(f"Initializing Drone...")
 #tello=Tello()  #PLEASE NEVER UNCOMMENT THIS
+main()
 #print(f"Done.")
 
 with open(args.prompt, "r") as f:
