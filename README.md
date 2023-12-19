@@ -89,4 +89,4 @@ Once the robot(drone) has been inititiated and demonstrates readiness.
 - Ensure your microphone and speaker is working 
 - Wait for the prompt that says "SAMIS wants to hear you speaking"
 - Then start speaking
-- SAMISGpt engine will execute command and speak back to as the robot
+- SAMISGpt engine will execute command and speak back to you as the robot
