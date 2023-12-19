@@ -24,3 +24,6 @@ The model was trained using a custom dataset comprising 119 images of a car, aug
 ### Run on Raspberry Pi
 ```bash
 python3 detect.py \ --model yourModelName.tflite
+
+```
+#### NOTE: The model was optimize for use with google coral using TFLite. For more visit [Coral](https://coral.ai/)
