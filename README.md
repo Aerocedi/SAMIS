@@ -69,4 +69,11 @@ echo $OPENAI_API_KEY
 
 ## Connecting With Your Collaborative Robot
 In our case we used an aerial robot (**DJI Tello Edu**) drone. 
-*Ensure the battery is fully charged and robot placed in a open space with good clearance. 
+*Ensure the battery is fully charged and robot placed in a open space with good clearance*. 
+* Make sure your Wifi is on, then search for `Tello` signal
+* Connect with the open network
+
+## Viewing And Working With Dashboard 
+Now navigate to the the localhost address usually `http://127.0.0.1:8000`
+- The first page you will see is a SAMIS login (**Features to be updated in next realease)
+- Kindly navigate to `http://127.0.0.1:8000`
